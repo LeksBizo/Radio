@@ -3,15 +3,15 @@ public class Radio {
     private int currentStation;
     private int currentVolume; // alt + insert (Getter and Setter)
 
-        public void next(){   //для Станций вперед
+    public void next() {   //для Станций вперед
         if (currentStation != 9) {
             currentStation++;
             return;
         }
-            currentStation = 0; //переключался с 9 на 0.
-        }
+        currentStation = 0; //переключался с 9 на 0.
+    }
 
-        public void next2(){  //для Громкости вперед
+    public void next2() {  //для Громкости вперед
         if (currentVolume != 100) {
             currentVolume++;
             return;
@@ -19,17 +19,17 @@ public class Radio {
         currentVolume = 0; //переключался с 9 на 0.
     }
 
-    public void prev(){ // - для станций
-        if (currentStation != 0){
-            currentStation --;
+    public void prev() { // - для станций
+        if (currentStation != 0) {
+            currentStation--;
             return;
         }
         currentStation = 9;
     }
 
-    public void prev2(){ // - для громкости
-        if (currentVolume != 0){
-            currentVolume --;
+    public void prev2() { // - для громкости
+        if (currentVolume != 0) {
+            currentVolume--;
             return;
         }
         currentStation = 9;
@@ -40,10 +40,10 @@ public class Radio {
     }
 
     public void setCurrentStation(int currentStation) {
-        if (currentStation < 0){
+        if (currentStation < 0) {
             return;
         }
-        if (currentStation > 9){
+        if (currentStation > 9) {
             return;
         }
         this.currentStation = currentStation;
@@ -54,10 +54,10 @@ public class Radio {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if (currentVolume > 100){
+        if (currentVolume > 100) {
             return;
         }
-        if (currentVolume < 0){
+        if (currentVolume < 0) {
             return;
         }
         this.currentVolume = currentVolume;

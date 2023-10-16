@@ -7,7 +7,7 @@ class RadioTest {
 
     @Test
 
-    public void StationCheckCorrect(){
+    public void StationCheckCorrect() {
 
         Radio radio = new Radio();
 
@@ -16,12 +16,12 @@ class RadioTest {
         int expected = 4;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void StationCheckIncorrectMore(){
+    public void StationCheckIncorrectMore() {
 
         Radio radio = new Radio();
 
@@ -30,11 +30,12 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
-    public void StationCheckIncorrectNegativeNumber(){
+    public void StationCheckIncorrectNegativeNumber() {
 
         Radio radio = new Radio();
 
@@ -43,11 +44,11 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void StationCheckZero(){
+    public void StationCheckZero() {
 
         Radio radio = new Radio();
 
@@ -58,10 +59,11 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test //проверяем переключение базовое с 6 на 7
-    public void StationCheckNextStation(){
+    public void StationCheckNextStation() {
 
         Radio radio = new Radio();
 
@@ -72,10 +74,11 @@ class RadioTest {
         int expected = 7;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test //проверяем переключение с 9 на 0
-    public void StationCheckNextStationStart(){
+    public void StationCheckNextStationStart() {
 
         Radio radio = new Radio();
 
@@ -86,10 +89,11 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test //проверяем переключение с 3 на 2
-    public void StationCheckPrevStation(){
+    public void StationCheckPrevStation() {
 
         Radio radio = new Radio();
 
@@ -100,10 +104,11 @@ class RadioTest {
         int expected = 2;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test //проверяем переключение с 9 на 0
-    public void StationCheckPrevStationEnd(){
+    public void StationCheckPrevStationEnd() {
 
         Radio radio = new Radio();
 
@@ -114,11 +119,12 @@ class RadioTest {
         int expected = 9;
         int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
-    public void VolumeCheckCorrect(){
+    public void VolumeCheckCorrect() {
 
         Radio radio = new Radio();
 
@@ -127,12 +133,12 @@ class RadioTest {
         int expected = 20;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void VolumeCheckIncorrectMore(){
+    public void VolumeCheckIncorrectMore() {
 
         Radio radio = new Radio();
 
@@ -141,12 +147,12 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void VolumeCheckIncorrectNegativeNumber(){
+    public void VolumeCheckIncorrectNegativeNumber() {
 
         Radio radio = new Radio();
 
@@ -155,12 +161,12 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void VolumeCheckZero(){
+    public void VolumeCheckZero() {
 
         Radio radio = new Radio();
 
@@ -171,11 +177,11 @@ class RadioTest {
         int expected = 0;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test //проверяем переключение громкости  с 0 на 1
-    public void VolumeCheckNextVolume(){
+    public void VolumeCheckNextVolume() {
 
         Radio radio = new Radio();
 
@@ -186,11 +192,11 @@ class RadioTest {
         int expected = 1;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test //проверяем переключение громкости  с 100 на 99
-    public void VolumeCheckPrevVolume(){
+    public void VolumeCheckPrevVolume() {
 
         Radio radio = new Radio();
 
@@ -201,7 +207,7 @@ class RadioTest {
         int expected = 99;
         int actual = radio.getCurrentVolume();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
 }
