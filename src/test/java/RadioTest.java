@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
 
@@ -180,34 +179,5 @@ class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test //проверяем переключение громкости  с 0 на 1
-    public void VolumeCheckNextVolume() {
-
-        Radio radio = new Radio();
-
-        radio.setCurrentVolume(0);
-
-        radio.next2();
-
-        int expected = 1;
-        int actual = radio.getCurrentVolume();
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test //проверяем переключение громкости  с 100 на 99
-    public void VolumeCheckPrevVolume() {
-
-        Radio radio = new Radio();
-
-        radio.setCurrentVolume(100);
-
-        radio.prev2();
-
-        int expected = 99;
-        int actual = radio.getCurrentVolume();
-
-        Assertions.assertEquals(expected, actual);
-    }
 
 }

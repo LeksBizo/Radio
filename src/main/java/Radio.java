@@ -11,13 +11,6 @@ public class Radio {
         currentStation = 0; //переключался с 9 на 0.
     }
 
-    public void next2() {  //для Громкости вперед
-        if (currentVolume != 100) {
-            currentVolume++;
-            return;
-        }
-        currentVolume = 0; //переключался с 9 на 0.
-    }
 
     public void prev() { // - для станций
         if (currentStation != 0) {
@@ -27,13 +20,7 @@ public class Radio {
         currentStation = 9;
     }
 
-    public void prev2() { // - для громкости
-        if (currentVolume != 0) {
-            currentVolume--;
-            return;
-        }
-        currentStation = 9;
-    }
+
 
     public int getCurrentStation() {
         return currentStation;
